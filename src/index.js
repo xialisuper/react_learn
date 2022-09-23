@@ -1,17 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import Avatar, { TodoList } from "./Avatar";
+import { peopleArr, peopleObjectArr } from "./data";
+import Gallery from "./Gallery";
+import PeopleList, { PeopleFilterList } from "./PeopleList";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Profile from "./Profile";
+import Table from "./Table";
+
+const rootNode = document.getElementById("root");
+const root = ReactDOM.createRoot(rootNode);
 root.render(
   <React.StrictMode>
-    <App />
+    <Table />
+    <Gallery />
+    <Avatar />
+    <TodoList />
+    <Profile />
+    <PeopleList peopleArr={peopleArr} />
+    <PeopleFilterList peopleArr={peopleObjectArr} />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
