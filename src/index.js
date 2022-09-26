@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Avatar, { TodoList } from "./Avatar";
+import TestButtonToolBar from "./Button";
 import { peopleArr, peopleObjectArr } from "./data";
 import Gallery from "./Gallery";
 import PeopleList, { PeopleFilterList } from "./PeopleList";
@@ -19,5 +20,6 @@ root.render(
     <Profile />
     <PeopleList peopleArr={peopleArr} />
     <PeopleFilterList peopleArr={peopleObjectArr} />
+    <TestButtonToolBar />
   </React.StrictMode>
 );
