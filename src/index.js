@@ -7,6 +7,7 @@ import Gallery from "./Gallery";
 import PeopleList, { PeopleFilterList } from "./PeopleList";
 
 import Profile from "./Profile";
+import Counter from "./renderState";
 import StateGallery from "./StateList";
 import Table from "./Table";
 
@@ -23,5 +24,6 @@ root.render(
     <PeopleFilterList peopleArr={peopleObjectArr} />
     <TestButtonToolBar />
     <StateGallery />
+    <Counter />
   </React.StrictMode>
 );
