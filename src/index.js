@@ -7,6 +7,7 @@ import Gallery from "./Gallery";
 import PeopleList, { PeopleFilterList } from "./PeopleList";
 
 import Profile from "./Profile";
+import StateGallery from "./StateList";
 import Table from "./Table";
 
 const rootNode = document.getElementById("root");
@@ -21,5 +22,6 @@ root.render(
     <PeopleList peopleArr={peopleArr} />
     <PeopleFilterList peopleArr={peopleObjectArr} />
     <TestButtonToolBar />
+    <StateGallery />
   </React.StrictMode>
 );
