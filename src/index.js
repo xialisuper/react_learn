@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import Avatar, { TodoList } from "./Avatar";
 import TestButtonToolBar from "./Button";
 import { peopleArr, peopleObjectArr } from "./data";
+import CityGuessForm, { ListOfGuessForm } from "./form_input";
 import Gallery from "./Gallery";
 import PeopleList, { PeopleFilterList } from "./PeopleList";
 
@@ -25,5 +26,6 @@ root.render(
     <TestButtonToolBar />
     <StateGallery />
     <Counter />
+    <CityGuessForm />
   </React.StrictMode>
 );
