@@ -16,7 +16,7 @@ export function ListOfGuessForm() {
   );
 }
 
-export default function CityGuessForm() {
+export function CityGuessForm() {
   const [answer, setAnswer] = useState("");
   const [error, seterror] = useState(null);
   const [status, setStatus] = useState("typing"); // typing submitting success;
