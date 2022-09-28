@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Avatar, { TodoList } from "./Avatar";
 import TestButtonToolBar from "./Button";
+import CityCheckList from "./city_checkbox";
+import { ContextPage } from "./context";
 import { peopleArr, peopleObjectArr } from "./data";
 import { CityGuessForm } from "./form_input";
 
@@ -28,5 +30,7 @@ root.render(
     <StateGallery />
     <Counter />
     <CityGuessForm />
+    <ContextPage />
+    <CityCheckList />
   </React.StrictMode>
 );
