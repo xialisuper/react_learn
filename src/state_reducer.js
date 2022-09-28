@@ -1,3 +1,17 @@
+/*
+
+How to write reducer :
+1. Move from setting state to dispatching actions.
+2. Write a reducer function.
+3. Use the reducer from your component.
+
+
+Write reducer well:
+
+1. Reducers must be pure. update objects and arrays without mutations
+2. Each action describes a single user interaction, even if that leads to multiple changes in the data
+*/
+
 import { useReducer } from "react";
 export default function TaskList() {
   const [tasks, dispatch] = useReducer(tasksReducer, initialTasks);
