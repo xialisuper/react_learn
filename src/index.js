@@ -16,6 +16,8 @@ import CatFriends from "./ref";
 import Counter from "./renderState";
 import StateGallery from "./StateList";
 import Table from "./Table";
+// import DotMoveDemo from "./use_event";
+import EventDemo2 from "./use_event2";
 
 const rootNode = document.getElementById("root");
 const root = ReactDOM.createRoot(rootNode);
@@ -36,5 +38,6 @@ root.render(
     <CityCheckList />
     <CatFriends />
     <ChatRoomDemo />
+    <EventDemo2 />
   </React.StrictMode>
 );
