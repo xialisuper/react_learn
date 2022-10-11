@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Avatar, { TodoList } from "./Avatar";
 import TestButtonToolBar from "./Button";
+import ChatRoomDemo from "./chat_room_effect";
 import CityCheckList from "./city_checkbox";
 import { ContextPage } from "./context";
 import { peopleArr, peopleObjectArr } from "./data";
@@ -11,6 +12,7 @@ import Gallery from "./Gallery";
 import PeopleList, { PeopleFilterList } from "./PeopleList";
 
 import Profile from "./Profile";
+import CatFriends from "./ref";
 import Counter from "./renderState";
 import StateGallery from "./StateList";
 import Table from "./Table";
@@ -32,5 +34,7 @@ root.render(
     <CityGuessForm />
     <ContextPage />
     <CityCheckList />
+    <CatFriends />
+    <ChatRoomDemo />
   </React.StrictMode>
 );
